@@ -1,11 +1,39 @@
-td {
-  margin: 1px;
-  padding: 15px;
-  background-color: black;
+.box1 {
+  position: relative;
+  width: 1000px;
+  height: 1000px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(211, 211, 211, 0.5);
+  border-radius: 8px;
+}
+
+.notes {
+  float: left;
+  width: 50px;
+  background-color: rgba(255, 255, 128, 0.5);
+  padding: 0 15px;
+  margin-right: 8px;
+  border: 2px solid lightGrey;
+  border-radius: 3px;
+  text-align: center;
+}
+
+li {
+  display: inline;
+  margin: 3px;
+  padding: 25px;
+  background-color: rgba(42, 42, 42, 0.9);
   border: 2px solid;
   border-color: yellow;
+  border-radius: 7px;
+}
+
+tr {
+  margin-top: 10px;
 }
 
 .play {
-  background-color: lightGrey;
+  background-color: rgba(138, 172, 184, 1);
 }
