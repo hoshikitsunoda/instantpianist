@@ -1,11 +1,16 @@
+body {
+  background-color: silver;
+}
+
 .box1 {
   position: relative;
-  width: 1000px;
+  width: 1200px;
   height: 1000px;
   margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgba(211, 211, 211, 0.5);
+  background-color: rgba(42, 42, 42, 0.9);
+  border: 3px solid white;
   border-radius: 8px;
 }
 
@@ -21,17 +26,18 @@
 }
 
 li {
-  display: inline;
-  margin: 3px;
-  padding: 25px;
-  background-color: rgba(42, 42, 42, 0.9);
+  float: left;
+  display: block;
+}
+
+button {
+  display: block;
+  margin: 2px;
+  padding: 31px;
+  background-color: rgba(0, 0, 0, 1);
   border: 2px solid;
   border-color: yellow;
   border-radius: 7px;
-}
-
-tr {
-  margin-top: 10px;
 }
 
 .play {

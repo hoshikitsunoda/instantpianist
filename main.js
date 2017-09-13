@@ -31,7 +31,7 @@ function play() {
 */
 
 document.getElementById('pads').addEventListener('click', function(event){
-  if(event.target && event.target.matches('li')) {
+  if(event.target && event.target.matches('button')) {
     event.target.classList.toggle('play')
   }
 })
