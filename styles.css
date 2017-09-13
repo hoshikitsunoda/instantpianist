@@ -52,6 +52,10 @@ button:focus {
   outline: none;
 }
 
+button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 .play {
   background-color: rgba(255, 255, 255, 0.8);
 }
