@@ -91,7 +91,7 @@ li {
 }
 
 #sound1 .play {
-  background-color: #d5d9d9;
+  background-color: #edf2f2;
   -webkit-animation: neon3 0.8s ease-in-out infinite alternate;
   -moz-animation: neon3 0.8s ease-in-out infinite alternate;
   animation: neon3 0.8s ease-in-out infinite alternate;
