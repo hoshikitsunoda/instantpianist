@@ -25,8 +25,9 @@ h1 {
   border: 8px solid white;
   border-radius: 8px;
   box-shadow:
-    0 0 20px white,
-    0 0 30px grey;
+    0 0 0 5px hsl(0, 0%, 40%),
+    0 0 30px white,
+    0 0 40px grey;
 }
 
 .row1 {
@@ -101,12 +102,11 @@ li {
     2px 1px yellow,
     1px 2px yellow,
     3px 2px yellow,
-    2px 3px yellow,
-    6px 5px 20px yellow;
+    2px 3px yellow;
 }
 
 a {
-  font: bold 15px/13px Helvetica, Verdana, Tahoma;
+  font-family: 'Monoton', sans-serif;
   color: rgba(255, 241, 177, 1);
   text-align: center;
   margin-top: 3px;
@@ -142,14 +142,14 @@ a {
 @-webkit-keyframes neon3 {
   from {
     box-shadow:
-      1px 0 3px #fff,
-      0 1px 5px #fff,
-      2px 1px 7px #fff,
-      1px 2px 9px #ffdd1b,
-      3px 2px 11px #ffdd1b,
-      2px 3px 13px #ffdd1b,
-      4px 3px 15px #ffdd1b,
-      3px 4px 17px #ffdd1b;
+      1px 0 1px #fff,
+      0 1px 2px #fff,
+      2px 1px 3px #fff,
+      1px 2px 5px #ffdd1b,
+      3px 2px 7px #ffdd1b,
+      2px 3px 9px #ffdd1b,
+      4px 3px 11px #ffdd1b,
+      3px 4px 13px #ffdd1b;
   }
 
   to {
