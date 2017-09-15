@@ -1,6 +1,7 @@
 var $sound1 = document.querySelector('#sound1')
 var $sound2 = document.querySelector('#sound2')
 var $start = document.querySelector('#startbutton')
+var $stop = document.querySelector('#stopbutton')
 
 function sound1() {
   var $sound1 = new Audio('sounds/kick1.wav')
@@ -34,7 +35,12 @@ function columnReader() {
 }
 
 function play() {
-  interval = setInterval(columnReader, 500)
+  interval = setInterval(columnReader, 250)
+}
+
+function stop() {
+  clearInterval(interval)
 }
 
 $start.addEventListener('click', play, false)
+$stop.addEventListener('click', stop, false)
