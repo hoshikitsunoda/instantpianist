@@ -1,26 +1,44 @@
 body {
-  background-image: url("Photos/background-1.jpg");
-  background-size: 100% auto;
-  background-position: center top;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-sizing: border-box;
+  background: #242525;
+  border-radius: 50%;
+  box-shadow:
+    inset 0 0 40px #fff,
+    inset 20px 0 70px #8af8ff,
+    inset -20px 0 70px #ccffd6,
+    inset 20px 0 700px #8af8ff,
+    inset -20px 0 700px #f0f,
+    0 0 40px #fff,
+    -10px 0 40px #fffbbf,
+    10px 0 40px #8af8ff;
 }
 
 h1 {
-  color: black;
   font-family: 'Monoton', sans-serif;
   text-align: center;
   font-size: 100px;
   font-weight: lighter;
-  animation: neon1 3s ease-in-out infinite alternate;
+  background: -webkit-linear-gradient(#000, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow:
+    0 15px 5px rgba(0, 0, 0, 0.1),
+    10px 20px 5px rgba(0, 0, 0, 0.05),
+    -10px 20px 5px rgba(0, 0, 0, 0.05);
 }
 
 .box1 {
   position: relative;
   width: 1200px;
-  height: 1000px;
+  height: 800px;
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgba(42, 42, 42, 0.9);
+  background-color: rgba(42, 42, 42, 0.7);
   border: 8px solid white;
   border-radius: 8px;
   box-shadow:
@@ -45,7 +63,8 @@ h1 {
   border-radius: 50%;
   border-style: double;
   box-shadow: 0 0 5px yellow;
-  background-color: #585a5a;
+  background-color: #38363e;
+  opacity: 0.7;
 }
 
 li {
@@ -53,12 +72,19 @@ li {
   display: block;
 }
 
+.startstop {
+  margin: 25px auto;
+  width: 80%;
+  left: 36.5%;
+  position: relative;
+}
+
 #sound1 button {
   display: block;
   cursor: pointer;
   margin: 6px;
   padding: 26px;
-  background-color: rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 0.4);
   border: 2px solid #ede732;
   border-radius: 5px;
   box-shadow:
@@ -89,6 +115,7 @@ li {
 
 #sound1 .play {
   background-color: #edf2f2;
+  opacity: 0.8;
   box-shadow:
     1px 0 0.5px #fff,
     0 1px 1.5px #fff,
@@ -116,24 +143,24 @@ a {
     text-shadow:
       0 0 20px #fff,
       0 0 60px #fff,
-      0 0 80px #fff,
-      0 0 100px #fff,
-      0 0 120px #c1dfff,
-      0 0 140px #c1dfff,
-      0 0 160px #c1dfff,
-      0 0 180px #c1dfff;
+      0 0 80px #484848,
+      0 0 100px #484848,
+      0 0 120px #000,
+      0 0 140px #000,
+      0 0 160px #000,
+      0 0 180px #000;
   }
 
   to {
     text-shadow:
       0 0 10px #fff,
       0 0 15px #fff,
-      0 0 20px #fff,
-      0 0 30px #fff,
-      0 0 40px #c1dfff,
-      0 0 60px #c1dfff,
-      0 0 80px #c1dfff,
-      0 0 100px #c1dfff;
+      0 0 20px #484848,
+      0 0 30px #484848,
+      0 0 40px #000,
+      0 0 60px #000,
+      0 0 80px #000,
+      0 0 100px #000;
   }
 }
 
