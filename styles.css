@@ -1,17 +1,32 @@
 body {
-  background-color: silver;
+  background-image: url("Photos/background-1.jpg");
+  background-size: 100% auto;
+  background-position: center top;
+}
+
+h1 {
+  color: black;
+  font-family: 'Monoton', sans-serif;
+  text-align: center;
+  font-size: 100px;
+  font-weight: lighter;
+  animation: neon1 3s ease-in-out infinite alternate;
 }
 
 .box1 {
   position: relative;
   width: 1200px;
   height: 1000px;
-  margin-top: 100px;
+  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
   background-color: rgba(42, 42, 42, 0.9);
-  border: 3px solid white;
+  border: 8px solid white;
   border-radius: 8px;
+  box-shadow:
+    0 0 0 5px hsl(0, 0%, 40%),
+    0 0 30px white,
+    0 0 40px grey;
 }
 
 .row1 {
@@ -20,17 +35,17 @@ body {
 
 .notes {
   float: left;
-  width: 9px;
+  width: 30px;
   height: 37px;
-  background-color: rgba(0, 0, 0, 1);
-  padding: 0 15px;
-  margin-top: 27px;
-  margin-right: 23px;
-  margin-left: 23px;
-  border: 4px solid lightGrey;
+  padding: 0 3.5px;
+  margin-top: 28px;
+  margin-right: 14px;
+  margin-left: 16px;
+  border: 4px solid black;
   border-radius: 50%;
   border-style: double;
-  box-shadow: 0 0 2px white;
+  box-shadow: 0 0 5px yellow;
+  background-color: #585a5a;
 }
 
 li {
@@ -38,32 +53,112 @@ li {
   display: block;
 }
 
-button {
+#sound1 button {
   display: block;
-  margin: 2px;
-  padding: 29px;
+  cursor: pointer;
+  margin: 6px;
+  padding: 26px;
   background-color: rgba(0, 0, 0, 1);
-  border: 2px solid yellow;
+  border: 2px solid #ede732;
   border-radius: 5px;
-  box-shadow: 0 0 6px yellow;
+  box-shadow:
+    1px 0 #ada825,
+    0 1px #ada825,
+    2px 1px #ada825,
+    1px 2px #ada825,
+    3px 2px #978e2f,
+    2px 3px #978e2f,
+    3px 3px #6a6421,
+    4px 4px #6a6421,
+    5px 5px 1px #000;
 }
 
-button:focus {
+#sound1 button:focus {
   outline: none;
 }
 
-button:hover {
-  background-color: rgba(255, 255, 255, 0.5);
+#sound1 button:hover:not(:active) {
+  background-color: #a7a8a7;
+  animation: neon3 0.8s ease-in-out infinite alternate;
 }
 
-.play {
-  background-color: rgba(255, 255, 255, 0.8);
+#sound1 button:active {
+  background-color: #a7a8a7;
+  transform: translate(2px, 2px);
 }
 
-p {
-  font: bold 15px/13px Helvetica, Verdana, Tahoma;
-  color: grey;
+#sound1 .play {
+  background-color: #edf2f2;
+  box-shadow:
+    1px 0 0.5px #fff,
+    0 1px 1.5px #fff,
+    2px 1px 2.5px #ffdd1b,
+    1px 2px 3.5px #ffdd1b,
+    3px 2px 4.5px #ffdd1b,
+    2px 3px 5.5px #ffdd1b,
+    4px 3px 6.5px #ffdd1b,
+    3px 4px 7.5px #ffdd1b;
+}
+
+a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+  color: #585a5a;
   text-align: center;
   margin-top: 3px;
   line-height: 37px;
+}
+
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow:
+      0 0 20px #fff,
+      0 0 60px #fff,
+      0 0 80px #fff,
+      0 0 100px #fff,
+      0 0 120px #c1dfff,
+      0 0 140px #c1dfff,
+      0 0 160px #c1dfff,
+      0 0 180px #c1dfff;
+  }
+
+  to {
+    text-shadow:
+      0 0 10px #fff,
+      0 0 15px #fff,
+      0 0 20px #fff,
+      0 0 30px #fff,
+      0 0 40px #c1dfff,
+      0 0 60px #c1dfff,
+      0 0 80px #c1dfff,
+      0 0 100px #c1dfff;
+  }
+}
+
+@-webkit-keyframes neon3 {
+  from {
+    box-shadow:
+      1px 0 2px #fff,
+      0 1px 3px #fff,
+      2px 1px 5px #fff,
+      1px 2px 7px #ffdd1b,
+      3px 2px 9px #ffdd1b,
+      2px 3px 11px #ffdd1b,
+      4px 3px 13px #ffdd1b,
+      3px 4px 15px #ffdd1b;
+  }
+
+  to {
+    box-shadow:
+      1px 0 0.5px #fff,
+      0 1px 1.5px #fff,
+      2px 1px 2.5px #fff,
+      1px 2px 3.5px #ffdd1b,
+      3px 2px 4.5px #ffdd1b,
+      2px 3px 5.5px #ffdd1b,
+      4px 3px 6.5px #ffdd1b,
+      3px 4px 7.5px #ffdd1b;
+  }
 }
