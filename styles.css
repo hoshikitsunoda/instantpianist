@@ -5,6 +5,12 @@ body {
   display: block;
   box-sizing: border-box;
   background: #242525;
+}
+
+.background {
+  position: relative;
+  margin: 0 auto;
+  width: 90%;
   border-radius: 50%;
   box-shadow:
     inset 0 0 40px #fff,
@@ -17,10 +23,21 @@ body {
     10px 0 40px #8af8ff;
 }
 
+header {
+  position: relative;
+  width: 100%;
+}
+
+#pads {
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
 h1 {
   font-family: 'Monoton', sans-serif;
   text-align: center;
-  font-size: 100px;
+  font-size: 7vw;
   font-weight: lighter;
   background: -webkit-linear-gradient(#000, #fff);
   -webkit-background-clip: text;
@@ -33,57 +50,64 @@ h1 {
 
 .box1 {
   position: relative;
-  width: 1200px;
   height: 800px;
-  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
   background-color: rgba(42, 42, 42, 0.7);
   border: 8px solid white;
   border-radius: 8px;
   box-shadow:
+    inset 0 0 400px #18170b,
     0 0 0 5px hsl(0, 0%, 40%),
     0 0 30px white,
     0 0 40px grey;
 }
 
 .row1 {
-  padding: 7px;
+  padding: 0.5vw;
+  height: 100%;
 }
 
-.notes {
+#c-note {
+  display: flex;
+  width: 1.2vw;
+  height: 2.5vw;
   float: left;
-  width: 30px;
-  height: 37px;
-  padding: 0 3.5px;
-  margin-top: 28px;
-  margin-right: 14px;
-  margin-left: 16px;
-  border: 4px solid black;
+  padding: 0 0.8%;
+  margin-top: 2.7%;
+  margin-left: 1%;
   border-radius: 50%;
   border-style: double;
-  box-shadow: 0 0 5px yellow;
   background-color: #38363e;
   opacity: 0.7;
+  box-shadow:
+    1px 0 #4f4c27,
+    0 1px #4f4c27,
+    2px 1px #524e28,
+    1px 2px #524e28,
+    3px 2px #454222,
+    2px 3px #454222,
+    4px 4px 2px #000;
 }
 
 li {
   float: left;
   display: block;
+  width: calc((100% - 22px) / 16);
+  margin-right: -0.3vw;
 }
 
 .startstop {
-  margin: 25px auto;
-  width: 80%;
-  left: 36.5%;
-  position: relative;
+  margin: 2.5vw;
+  width: 50%;
+  margin-left: 44vw;
 }
 
 #sound1 button {
-  display: block;
+  position: relative;
   cursor: pointer;
-  margin: 6px;
-  padding: 26px;
+  margin: 33%;
+  padding: 35%;
   background-color: rgba(0, 0, 0, 0.4);
   border: 2px solid #ede732;
   border-radius: 5px;
@@ -99,6 +123,8 @@ li {
     5px 5px 1px #000;
 }
 
+.primary,
+#c-note:focus,
 #sound1 button:focus {
   outline: none;
 }
@@ -106,6 +132,11 @@ li {
 #sound1 button:hover:not(:active) {
   background-color: #a7a8a7;
   animation: neon3 0.8s ease-in-out infinite alternate;
+}
+
+a:hover:not(:active) {
+  background-color: #a7a8a7;
+  animation: neon2 0.8s ease-in-out infinite alternate;
 }
 
 #sound1 button:active {
@@ -129,13 +160,12 @@ li {
 
 a {
   font-family: 'Raleway', sans-serif;
-  font-size: 26px;
+  font-size: 1.8vw;
   font-weight: bold;
   text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
   color: #585a5a;
   text-align: center;
-  margin-top: 3px;
-  line-height: 37px;
+  line-height: 2.5vw;
 }
 
 @-webkit-keyframes neon1 {
@@ -161,6 +191,32 @@ a {
       0 0 60px #000,
       0 0 80px #000,
       0 0 100px #000;
+  }
+}
+
+@-webkit-keyframes neon2 {
+  from {
+    box-shadow:
+      1px 0 2px #fff,
+      0 1px 3px #fff,
+      2px 1px 5px #464322,
+      1px 2px 7px #464322,
+      3px 2px 9px #464322,
+      2px 3px 11px #ffdd1b,
+      4px 3px 13px #ffdd1b,
+      3px 4px 15px #ffdd1b;
+  }
+
+  to {
+    box-shadow:
+      1px 0 0.5px #fff,
+      0 1px 1.5px #fff,
+      2px 1px 2.5px #464322,
+      1px 2px 3.5px #464322,
+      3px 2px 4.5px #464322,
+      2px 3px 5.5px #ffdd1b,
+      4px 3px 6.5px #ffdd1b,
+      3px 4px 7.5px #ffdd1b;
   }
 }
 

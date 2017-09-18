@@ -1,4 +1,4 @@
-var $sound1 = document.querySelector('#sound1')
+var $sound1 = document.querySelector('#c-note')
 var $sound2 = document.querySelector('#sound2')
 var $start = document.querySelector('#startbutton')
 var $stop = document.querySelector('#stopbutton')
@@ -19,6 +19,7 @@ document.getElementById('pads').addEventListener('click', function(event){
 var currentCol = 0
 var interval = 0
 var $buttons = document.querySelectorAll('button')
+var started = false
 
 function columnReader() {
   var $button = $buttons[currentCol]
@@ -27,19 +28,24 @@ function columnReader() {
       sound1()
     }
     if (currentCol === 15) {
-        currentCol = 0
+      currentCol = 0
     } else {
-    currentCol++
+      currentCol++
     }
   }
 }
 
 function play() {
-  interval = setInterval(columnReader, 250)
+  if (started === false) {
+    started = true
+    interval = setInterval(columnReader, 250)
+  }
 }
 
 function stop() {
+  started = false
   clearInterval(interval)
+  currentCol = 0
 }
 
 $start.addEventListener('click', play, false)
