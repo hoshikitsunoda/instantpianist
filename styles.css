@@ -69,6 +69,19 @@ h1 {
 }
 
 #c-note,
+#cs-note,
+#d-note {
+  display: flex;
+  width: 1.2vw;
+  height: 2.5vw;
+  float: left;
+  padding: 0 0.8%;
+  margin-top: 1.5%;
+  margin-left: 1%;
+  border-radius: 50%;
+  border-style: double;
+}
+
 #cs-note {
   display: flex;
   width: 1.2vw;
@@ -81,7 +94,15 @@ h1 {
   border-style: double;
 }
 
-#c-note {
+#c-note,
+#d-note {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.8vw;
+  font-weight: bold;
+  text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+  color: #585a5a;
+  text-align: center;
+  line-height: 2.5vw;
   background-color: #38363e;
   opacity: 0.7;
   box-shadow:
@@ -95,6 +116,14 @@ h1 {
 }
 
 #cs-note {
+  padding: 1px 12px 1px 7px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.3vw;
+  font-weight: bold;
+  text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+  color: #585a5a;
+  text-align: center;
+  line-height: 2.5vw;
   background-color: #38363e;
   opacity: 0.7;
   box-shadow:
@@ -174,7 +203,8 @@ li {
 }
 
 #sound1 button,
-#sound2 button {
+#sound2 button,
+#sound3 button {
   position: relative;
   cursor: pointer;
   margin: 15% 24%;
@@ -199,7 +229,9 @@ button {
   outline: none;
 }
 
-#sound1 button:hover:not(:active) {
+#sound1 button:hover:not(:active),
+#sound2 button:hover:not(:active),
+#sound3 button:hover:not(:active) {
   background-color: #a7a8a7;
   animation: neon3 0.8s ease-in-out infinite alternate;
 }
@@ -209,12 +241,16 @@ a:hover:not(:active) {
   animation: neon2 0.8s ease-in-out infinite alternate;
 }
 
-#sound1 button:active {
+#sound1 button:active,
+#sound2 button:active,
+#sound3 button:active {
   background-color: #a7a8a7;
   transform: translate(2px, 2px);
 }
 
-#sound1 .play {
+#sound1 .play,
+#sound2 .play,
+#sound3 .play {
   background-color: #edf2f2;
   opacity: 0.8;
   box-shadow:
@@ -226,16 +262,6 @@ a:hover:not(:active) {
     2px 3px 5.5px #ffdd1b,
     4px 3px 6.5px #ffdd1b,
     3px 4px 7.5px #ffdd1b;
-}
-
-a {
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.8vw;
-  font-weight: bold;
-  text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
-  color: #585a5a;
-  text-align: center;
-  line-height: 2.5vw;
 }
 
 @-webkit-keyframes neon1 {
