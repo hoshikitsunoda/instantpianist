@@ -68,16 +68,33 @@ h1 {
   height: 100%;
 }
 
-#c-note {
+#c-note,
+#cs-note {
   display: flex;
   width: 1.2vw;
   height: 2.5vw;
   float: left;
   padding: 0 0.8%;
-  margin-top: 2.7%;
+  margin-top: 1.5%;
   margin-left: 1%;
   border-radius: 50%;
   border-style: double;
+}
+
+#c-note {
+  background-color: #38363e;
+  opacity: 0.7;
+  box-shadow:
+    1px 0 #4f4c27,
+    0 1px #4f4c27,
+    2px 1px #524e28,
+    1px 2px #524e28,
+    3px 2px #454222,
+    2px 3px #454222,
+    4px 4px 2px #000;
+}
+
+#cs-note {
   background-color: #38363e;
   opacity: 0.7;
   box-shadow:
@@ -100,13 +117,67 @@ li {
 .startstop {
   margin: 2.5vw;
   width: 50%;
-  margin-left: 44vw;
+  margin-left: 40vw;
 }
 
-#sound1 button {
+#startbutton {
+  height: 33px;
+  width: 52px;
+  background-color: #38363e;
+  opacity: 0.7;
+  box-shadow:
+    1px 0 #4f4c27,
+    0 1px #4f4c27,
+    2px 1px #524e28,
+    1px 2px #524e28,
+    3px 2px #454222,
+    2px 3px #454222,
+    4px 4px 2px #000;
+}
+
+#stopbutton {
+  margin-left: 10px;
+  padding: 3px 6px;
+  background-color: #38363e;
+  opacity: 0.7;
+  box-shadow:
+    1px 0 #4f4c27,
+    0 1px #4f4c27,
+    2px 1px #524e28,
+    1px 2px #524e28,
+    3px 2px #454222,
+    2px 3px #454222,
+    4px 4px 2px #000;
+}
+
+#playlogo {
+  width: 3px;
+  height: 0;
+  margin: 3px 6px 3px 14px;
+  border-top: solid 9px transparent;
+  border-left: solid 15px #98e698;
+  border-bottom: solid 9px transparent;
+}
+
+#stoplogo {
+  width: 15px;
+  height: 15px;
+  margin: 4px 11px;
+  background: #de6159;
+}
+
+#stopbutton:active,
+#startbutton:active {
+  background-color: #a7a8a7;
+  transform: translate(2px, 2px);
+  box-shadow: 0 0 1px #515c6d;
+}
+
+#sound1 button,
+#sound2 button {
   position: relative;
   cursor: pointer;
-  margin: 33%;
+  margin: 15% 24%;
   padding: 35%;
   background-color: rgba(0, 0, 0, 0.4);
   border: 2px solid #ede732;
@@ -124,8 +195,7 @@ li {
 }
 
 .primary,
-#c-note:focus,
-#sound1 button:focus {
+button {
   outline: none;
 }
 
