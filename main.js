@@ -141,7 +141,15 @@ function stop() {
 
 var $sphere = document.querySelector('nav')
 
-function spin(event) {
+function spark() {
+  $sphere.classList.add('spark')
+}
+
+function sparkStop() {
+  $sphere.classList.remove('spark')
+}
+
+function spinToggle(event) {
   var $spins = document.querySelectorAll('.add')
   for (var i = 0; i < $spins.length; i++) {
     var $spin = $spins[i]
@@ -149,10 +157,26 @@ function spin(event) {
   }
 }
 
-$sphere.addEventListener('click', spin, false)
+function spin(event) {
+  var $spins = document.querySelectorAll('.add')
+  for (var i = 0; i < $spins.length; i++) {
+    var $spin = $spins[i]
+    $spin.classList.add('spin')
+  }
+}
+
+function spinStop(event) {
+  var $spins = document.querySelectorAll('.add')
+  for (var i = 0; i < $spins.length; i++) {
+    var $spin = $spins[i]
+    $spin.classList.remove('spin')
+  }
+}
+
+$sphere.addEventListener('click', spinToggle, false)
 
 $start.addEventListener('click', play, false)
+$start.addEventListener('click', spark, false)
 $stop.addEventListener('click', stop, false)
-
-var $body = document.querySelector('.light')
-var rect = $body.getBoundingClientRect()
+$stop.addEventListener('click', sparkStop, false)
+$stop.addEventListener('click', spinStop, false)
