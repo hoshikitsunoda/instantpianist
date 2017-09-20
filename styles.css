@@ -36,7 +36,7 @@ body {
 
 .highlighter {
   background-color: #edf2f2;
-  animation: neon15 1s ease-in-out infinite alternate;
+  animation: neon15 0.25s ease-in-out infinite alternate;
 }
 
 .spin {
@@ -254,7 +254,7 @@ a:hover:not(:active) {
   position: relative;
   cursor: pointer;
   margin: 15% 24%;
-  padding: 35%;
+  padding: 21px;
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 5px;
 }
@@ -1086,10 +1086,10 @@ a:hover:not(:active) {
       0 1px 3px #fff,
       2px 1px 5px #fff,
       1px 2px 7px #fff,
-      3px 2px 9px #fff,
-      2px 3px 11px #fff,
-      4px 3px 13px #fff,
-      3px 4px 15px #fff;
+      3px 2px 10px #fff,
+      2px 3px 15px #fff,
+      4px 3px 20px #fff,
+      3px 4px 30px #fff;
   }
 
   to {
