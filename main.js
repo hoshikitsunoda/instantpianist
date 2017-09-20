@@ -77,56 +77,54 @@ var started = false
 
 function columnReader() {
 
-  for (var i = 0; i < $buttons.length; i++) {
-    var $row1 = $buttons[currentCol]
-    var $row2 = $buttons[currentCol + 16]
-    var $row3 = $buttons[currentCol + 32]
-    var $row4 = $buttons[currentCol + 48]
-    var $row5 = $buttons[currentCol + 64]
-    var $row6 = $buttons[currentCol + 80]
-    var $row7 = $buttons[currentCol + 96]
-    var $row8 = $buttons[currentCol + 112]
-    var $row9 = $buttons[currentCol + 128]
-    var $row10 = $buttons[currentCol + 144]
-    var $row11 = $buttons[currentCol + 160]
-    var $row12 = $buttons[currentCol + 176]
+  var $row1 = $buttons[currentCol]
+  var $row2 = $buttons[currentCol + 16]
+  var $row3 = $buttons[currentCol + 32]
+  var $row4 = $buttons[currentCol + 48]
+  var $row5 = $buttons[currentCol + 64]
+  var $row6 = $buttons[currentCol + 80]
+  var $row7 = $buttons[currentCol + 96]
+  var $row8 = $buttons[currentCol + 112]
+  var $row9 = $buttons[currentCol + 128]
+  var $row10 = $buttons[currentCol + 144]
+  var $row11 = $buttons[currentCol + 160]
+  var $row12 = $buttons[currentCol + 176]
 
-    if ($row1 !== undefined && $row1.classList.contains('play')) {
-        sound1.play()
-    }
-    if ($row2 !== undefined && $row2.classList.contains('play')) {
-        sound2.play()
-    }
-    if ($row3 !== undefined && $row3.classList.contains('play')) {
-        sound3.play()
-    }
-    if ($row4 !== undefined && $row4.classList.contains('play')) {
-        sound4.play()
-    }
-    if ($row5 !== undefined && $row5.classList.contains('play')) {
-        sound5.play()
-    }
-    if ($row6 !== undefined && $row6.classList.contains('play')) {
-        sound6.play()
-    }
-    if ($row7 !== undefined && $row7.classList.contains('play')) {
-        sound7.play()
-    }
-    if ($row8 !== undefined && $row8.classList.contains('play')) {
-        sound8.play()
-    }
-    if ($row9 !== undefined && $row9.classList.contains('play')) {
-        sound9.play()
-    }
-    if ($row10 !== undefined && $row10.classList.contains('play')) {
-        sound10.play()
-    }
-    if ($row11 !== undefined && $row11.classList.contains('play')) {
-        sound11.play()
-    }
-    if ($row12 !== undefined && $row12.classList.contains('play')) {
-        sound12.play()
-    }
+  if ($row1 !== undefined && $row1.classList.contains('play')) {
+      sound1.play()
+  }
+  if ($row2 !== undefined && $row2.classList.contains('play')) {
+      sound2.play()
+  }
+  if ($row3 !== undefined && $row3.classList.contains('play')) {
+      sound3.play()
+  }
+  if ($row4 !== undefined && $row4.classList.contains('play')) {
+      sound4.play()
+  }
+  if ($row5 !== undefined && $row5.classList.contains('play')) {
+      sound5.play()
+  }
+  if ($row6 !== undefined && $row6.classList.contains('play')) {
+      sound6.play()
+  }
+  if ($row7 !== undefined && $row7.classList.contains('play')) {
+      sound7.play()
+  }
+  if ($row8 !== undefined && $row8.classList.contains('play')) {
+      sound8.play()
+  }
+  if ($row9 !== undefined && $row9.classList.contains('play')) {
+      sound9.play()
+  }
+  if ($row10 !== undefined && $row10.classList.contains('play')) {
+      sound10.play()
+  }
+  if ($row11 !== undefined && $row11.classList.contains('play')) {
+      sound11.play()
+  }
+  if ($row12 !== undefined && $row12.classList.contains('play')) {
+      sound12.play()
   }
   if (currentCol === 15) {
     currentCol = 0
