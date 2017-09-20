@@ -12,6 +12,7 @@ var $sound8 = document.querySelector('#kick-note')
 var $sound9 = document.querySelector('#snare-note')
 var $sound10 = document.querySelector('#hihat-note')
 var $sound11 = document.querySelector('#clap-note')
+var $sound12 = document.querySelector('#shaker-note')
 
 var sound1 = new Audio('sounds/synth/C.mp3')
 var sound2 = new Audio('sounds/synth/D.mp3')
@@ -24,6 +25,7 @@ var sound8 = new Audio('sounds/drums/909BD_Sweet01.wav')
 var sound9 = new Audio('sounds/drums/909SD_T1T3S6V2_X.wav')
 var sound10 = new Audio('sounds/drums/909HH_amp02.wav')
 var sound11 = new Audio('sounds/drums/909ClapV1_Orig.wav')
+var sound12 = new Audio('sounds/drums/shaker.mp3')
 
 $sound1.addEventListener('click', function () {
   sound1.play()
@@ -58,6 +60,9 @@ $sound10.addEventListener('click', function () {
 $sound11.addEventListener('click', function () {
   sound11.play()
 }, false)
+$sound12.addEventListener('click', function () {
+  sound12.play()
+}, false)
 
 document.getElementById('pads').addEventListener('click', function(event){
   if(event.target && event.target.matches('button')) {
@@ -84,6 +89,7 @@ function columnReader() {
     var $row9 = $buttons[currentCol + 128]
     var $row10 = $buttons[currentCol + 144]
     var $row11 = $buttons[currentCol + 160]
+    var $row12 = $buttons[currentCol + 176]
 
     if ($row1 !== undefined && $row1.classList.contains('play')) {
         sound1.play()
@@ -117,6 +123,9 @@ function columnReader() {
     }
     if ($row11 !== undefined && $row11.classList.contains('play')) {
         sound11.play()
+    }
+    if ($row12 !== undefined && $row12.classList.contains('play')) {
+        sound12.play()
     }
   }
   if (currentCol === 15) {
