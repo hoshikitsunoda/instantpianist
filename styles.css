@@ -1,6 +1,6 @@
 html {
+  box-sizing: border-box;
   background-color: #dfe3e3;
-  box-shadow: inset 0 0 100px #5e6060;
   height: 100%;
 }
 
@@ -45,7 +45,7 @@ body {
 
 .background {
   margin: 0 auto;
-  width: 93%;
+  width: 1050px;
   height: 100%;
   border-radius: 50%;
   box-shadow:
@@ -67,7 +67,7 @@ body {
 
 header {
   position: relative;
-  width: 97.7%;
+  width: 1001px;
   margin: 0 auto;
 }
 
@@ -96,14 +96,14 @@ h1 {
 li {
   float: left;
   display: block;
-  width: calc((100% - 22px) / 16);
-  margin-right: -0.3vw;
+  width: 60.5px;
+  margin-right: -5px;
   margin-top: -8px;
 }
 
 .box1 {
   position: relative;
-  width: 100%;
+  width: 1000px;
   height: 97%;
   margin-left: auto;
   margin-right: auto;
@@ -118,7 +118,7 @@ li {
 }
 
 .row1 {
-  padding: 0.5vw;
+  padding: 7px;
   height: 100%;
 }
 
@@ -126,7 +126,7 @@ li {
   position: relative;
   margin: 8px 0 40px;
   width: 50%;
-  margin-left: 44%;
+  margin-left: 436px;
 }
 
 .spark {
@@ -164,8 +164,8 @@ a:hover:not(:active) {
   width: 14px;
   height: 30px;
   float: left;
-  padding: 0 0.8%;
-  margin-left: 4%;
+  padding: 0 8.5px;
+  margin-left: 21px;
   border-radius: 50%;
   border-style: double;
 }
@@ -179,9 +179,9 @@ a:hover:not(:active) {
   width: 17px;
   height: 30px;
   float: left;
-  padding: 0 0.8%;
-  margin-top: 0.8%;
-  margin-left: 4%;
+  padding: 0 8.5px;
+  margin-top: 8.5px;
+  margin-left: 21.5px;
   border-radius: 50%;
   border-style: double;
 }
@@ -253,7 +253,7 @@ a:hover:not(:active) {
 #sound12 button {
   position: relative;
   cursor: pointer;
-  margin: 15% 24%;
+  margin: 9px 15px;
   padding: 21px;
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 5px;
@@ -678,6 +678,23 @@ a:hover:not(:active) {
   padding: 3px 6px;
 }
 
+#resetbutton {
+  position: relative;
+  height: 33px;
+  width: 52px;
+  background-color: #b54d26;
+  margin-left: 10px;
+  opacity: 0.7;
+  box-shadow:
+    1px 0 #4f4c27,
+    0 1px #4f4c27,
+    2px 1px #524e28,
+    1px 2px #524e28,
+    3px 2px #454222,
+    2px 3px #454222,
+    4px 4px 2px #000;
+}
+
 #startbutton,
 #stopbutton {
   background-color: #38363e;
@@ -709,7 +726,8 @@ a:hover:not(:active) {
 }
 
 #stopbutton:active,
-#startbutton:active {
+#startbutton:active,
+#resetbutton:active {
   background-color: #a7a8a7;
   transform: translate(2px, 2px);
   box-shadow: 0 0 1px #515c6d;
